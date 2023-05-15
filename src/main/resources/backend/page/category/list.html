@@ -87,7 +87,7 @@
       </el-table>
       <el-pagination
         class="pageList"
-        :page-sizes="[10, 20, 30, 40]"
+        :page-sizes="[2, 5, 10, 20]"
         :page-size="pageSize"
         layout="total, sizes, prev, pager, next, jumper"
         :total="counts"
@@ -155,7 +155,7 @@
             action: '',
             counts: 0,
             page: 1,
-            pageSize: 10,
+            pageSize: 2,
             tableData: [],
             type :'',
             classData: {
@@ -263,7 +263,7 @@
                   } else {
                     this.$message.error('排序只能输入数字类型')
                   }
-                  
+
               } else {
                   this.$message.error('请输入分类名称或排序')
               }
